@@ -7,7 +7,7 @@
 }
 
 :root {
-  --body-background-color: #06283d;
+  --text-color: #06283d;
   --container-background-color: #fff;
   --magnifying-background-color: #dff6ff;
 }
@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--body-background-color);
+  background: linear-gradient(to bottom right, #5b7fff, #33ccfc);
 }
 
 .container {
@@ -30,6 +30,7 @@ body {
   overflow: hidden;
   border-radius: 18px;
   font-family: "Roboto", sans-serif;
+
   transition: 0.6s ease-out;
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .search-box input {
-  color: var(--body-background-color);
+  color: var(--text-color);
   width: 80%;
   font-size: 24px;
   font-weight: 500;
@@ -52,7 +53,7 @@ body {
 .search-box input::placeholder {
   font-size: 20px;
   font-weight: 500;
-  color: var(--body-background-color);
+  color: var(--text-color);
   text-transform: capitalize;
 }
 
@@ -61,7 +62,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: var(--body-background-color);
+  color: var(--text-color);
   background: var(--magnifying-background-color);
   font-size: 22px;
   transition: 0.4s ease;
@@ -69,12 +70,12 @@ body {
 
 .search-box button:hover {
   color: var(--magnifying-background-color);
-  background: var(--body-background-color);
+  background: var(--text-color);
 }
 
 .search-box i {
   position: absolute;
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 28px;
 }
 
@@ -89,7 +90,7 @@ body {
 
 .weather-box .temperature {
   position: relative;
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 4rem;
   font-weight: 800;
   margin-top: 30px;
@@ -103,7 +104,7 @@ body {
 }
 
 .weather-box .description {
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 22px;
   font-weight: 500;
   text-transform: capitalize;
@@ -135,20 +136,20 @@ body {
 }
 
 .weather-details i {
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 26px;
   margin-right: 10px;
   margin-top: 6px;
 }
 
 .weather-details span {
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 22px;
   font-weight: 500;
 }
 
 .weather-details p {
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
 }
@@ -167,7 +168,7 @@ body {
 }
 
 .not-found p {
-  color: var(--body-background-color);
+  color: var(--text-color);
   font-size: 22px;
   font-weight: 500;
   margin-top: 12px;
